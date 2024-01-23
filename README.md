@@ -26,11 +26,13 @@ The game has two main game modes that can be utilized, Calibration Mode and Test
 
 ## Calibration Mode
 
+The purpose of this mode is to gather data and use it to train classifiers for the test mode. In this mode, the game will essentially play itself. It works similarly to a tutorial, just that it's relatively long (4-6 minutes). In the duration of the mode, it encourages the user to imagine controlling the kart by imagining moving a part of their body (left hand, right hand, or foot in this scenario).
+
 The game works as a cue and feedback of some sort for the user and is responsible for sending event markers to OpenVibe to be recorded alongside the signal.
 
 ## Test Mode
 
-OpenVibe has a Python interface/ box that can run Python script in real-time at specific intervals (or when it receives an input). With this interface, I implement my own machine-learning methods in python. OpenVibe has its own machine learning and other processing and classifier boxes that can be used (can be found on the OpenVibe tutorial scenario that comes with the installed application), but those more familiar with Python (or their preferred language) might be more comfortable designing their own pipeline.
+OpenVibe has a Python interface/ box that can run Python script in real-time at specific intervals (or when it receives an input). With this interface, I implement my own machine-learning methods in Python. OpenVibe has its own machine learning and other processing and classifier boxes that can be used (can be found on the OpenVibe tutorial scenario that comes with the installed application), but those more familiar with Python (or their preferred language) might be more comfortable designing their own pipeline.
 
 # Other
 The game also has some options that can be changed to suit your objective (not fully utilized for now).
