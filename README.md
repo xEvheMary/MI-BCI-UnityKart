@@ -14,3 +14,4 @@ The game is a modified version of [Unity's Karting Microgame](https://learn.unit
 * OpenVibe (Version 3.4 +)
 * Python (Version 3.7, the version must suit OpenVibe [requirement](http://openvibe.inria.fr/tutorial-using-python-with-openvibe/))
 * Python-MNE
+* sklearn
