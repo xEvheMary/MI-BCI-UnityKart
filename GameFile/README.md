@@ -2,6 +2,8 @@
 
 This repository only has the Unity package. This file can be imported into an empty project
 
+The game unity repository : [Github](https://github.com/xEvheMary/BCIKart)
+
 The game build : [GDrive](https://drive.google.com/drive/folders/1MJEUpNk1Rapo3PYTz9VY_K2JZNxdPJIg?usp=sharing)
 
 # Software
