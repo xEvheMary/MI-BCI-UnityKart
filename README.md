@@ -22,7 +22,7 @@ I use [OpenVibe](http://openvibe.inria.fr/) to process and record the EEG signal
 
 The game has two main game modes that can be utilized, Calibration Mode and Test Mode.
 
-
+![](https://github.com/xEvheMary/MI-BCI-UnityKart/blob/main/GameModes.png)
 
 The game works as a cue and feedback of some sort for the user and is responsible for sending event markers to OpenVibe to be recorded alongside the signal.
 
