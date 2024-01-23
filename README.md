@@ -30,4 +30,19 @@ The game works as a cue and feedback of some sort for the user and is responsibl
 
 ## Test Mode
 
-OpenVibe has a Python interface/ box that can run Python script in real-time at specific intervals (or when it receives an input). With this interface, I implement my own machine-learning methods on python. OpenVibe has its own machine learning and other processing and classifier boxes that can be used (can be found on the OpenVibe tutorial scenario that comes with the installed application), but those more familiar with Python (or their preferred language) might be more comfortable designing their own pipeline.
+OpenVibe has a Python interface/ box that can run Python script in real-time at specific intervals (or when it receives an input). With this interface, I implement my own machine-learning methods in python. OpenVibe has its own machine learning and other processing and classifier boxes that can be used (can be found on the OpenVibe tutorial scenario that comes with the installed application), but those more familiar with Python (or their preferred language) might be more comfortable designing their own pipeline.
+
+# Other
+The game also has some options that can be changed to suit your objective (not fully utilized for now).
+
+<img src="https://github.com/xEvheMary/MI-BCI-UnityKart/blob/main/GameSettings.png" width="800">
+
+General settings and Kart settings are personalized settings for every user.
+
+The important function for now is the LSL settings. This option for now is set to follow OpenVibe settings, this includes the type of event received in the game (which is hard-coded for now). If anyone doesn't want to use OpenVibe specifically and has their own pipeline, these options can be changed to follow suit.
+
+Settings purpose (might add tooltip on the menu at later date):
+* Signal Inlet: only read 1 channel, double type data. The default purpose is for the classifier's confidence, used to control the steering degree.
+* Marker Inlet: 1 channel, integer type data. The default purpose is for the classifier's class (in the form of OpenVibe [Stimulation Codes](http://openvibe.inria.fr/stimulation-codes/), used for steering direction.
+* Signal Outlet: Send 1 channel, double type data. No purpose for now.
+* Marker Outlet: Send 1 channel, integer type data. The default purpose is for the event markers during the recording. It also returns the received stimulation from the inlet.
