@@ -42,6 +42,12 @@ OpenVibe has a Python interface/ box that can run Python script in real-time at 
 
 The classification result is then converted into an OpenVibe event marker and then sent to the game via LSL (Optionally, we can also send some float value through another LSL channel to act as variable steering). The game will make use of the received events to control the kart steering angle. The test mode is finished after they complete several laps (laps option are on the screen shown above)
 
+# Instructions
+
+## Calibration Mode
+
+## Test Mode
+
 # Other
 The game also has some options that can be changed to suit your objective (not fully utilized for now).
 
@@ -51,8 +57,15 @@ General settings and Kart settings are personalized settings for every user.
 
 The important function for now is the LSL settings. This option for now is set to follow OpenVibe settings, this includes the type of event received in the game (which is hard-coded for now). If anyone doesn't want to use OpenVibe specifically and has their own pipeline, these options can be changed to follow suit.
 
-Settings purpose (might add tooltip on the menu at later date):
+Settings purpose (might add a tooltip on the menu in the future):
 * Signal Inlet: only read 1 channel, double type data. The default purpose is for the classifier's confidence, used to control the steering degree.
 * Marker Inlet: 1 channel, integer type data. The default purpose is for the classifier's class (in the form of OpenVibe [Stimulation Codes](http://openvibe.inria.fr/stimulation-codes/), used for steering direction).
 * Signal Outlet: Send 1 channel, double type data. No purpose for now.
 * Marker Outlet: Send 1 channel, integer type data. The default purpose is for the event markers during the recording. It also returns the received stimulation from the inlet.
+
+# Improvement possibilities
+* Centralized control for both OpenVibe and the game (might not necessarily use OpenVibe, maybe a custom application)
+* Automatic classifier training after recording (can quickly move on to testing)
+* Add Gas control (the function is there, but not possible right now classifier-wise)
+* Compound movement (forward and turning at the same time)
+* Option expansion (some options are still hard-coded in the game source code, might add more UI for more flexibility)
