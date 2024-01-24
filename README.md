@@ -30,6 +30,8 @@ The purpose of this mode is to gather data and use it to train classifiers for t
 
 The game works as a cue and feedback of some sort for the user and is responsible for sending event markers to OpenVibe to be recorded alongside the signal. OpenVibe runs in the background to receive both the signal and events and record it. The kart will go around the track as many as the lap set on the menu screen (image shown above) and will automatically end the recording after finishing all the laps)
 
+The options on that mode are the required laps to complete and the type of recording done. Details of the recording type are explained in this [article]()
+
 ## (Auxiliary) Training Pipeline
 
 The training pipeline is the process outside both the game and openvibe. It is done after the calibration mode and process the signal into data that can be used to train classifiers for the test mode. This process can be done through many methods and it is up to the researcher/user (I personally use Google Colab to train and save the classifier). 
@@ -41,6 +43,8 @@ The purpose of this mode is to test out the results of the training. In this mod
 OpenVibe has a Python interface/ box that can run Python script in real-time at specific intervals (or when it receives an input). With this interface, I implement my own machine-learning methods in Python. OpenVibe has its own machine learning and other processing and classifier boxes that can be used (can be found on the OpenVibe tutorial scenario that comes with the installed application), but those more familiar with Python (or their preferred language) might be more comfortable designing their own pipeline.
 
 The classification result is then converted into an OpenVibe event marker and then sent to the game via LSL (Optionally, we can also send some float value through another LSL channel to act as variable steering). The game will make use of the received events to control the kart steering angle. The test mode is finished after they complete several laps (laps options are on the screen shown above)
+
+The options on that mode are the required laps to complete and the toggle for free roam mode. Free roam mode (if set to true) removes the track and objective, letting the kart moves freely within the environment.
 
 # Instructions
 
