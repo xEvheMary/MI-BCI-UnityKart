@@ -73,3 +73,11 @@ Settings purpose (might add a tooltip on the menu in the future):
 * Add Gas control (the function is there, but not possible right now classifier-wise)
 * Compound movement (forward and turning at the same time)
 * Option expansion (some options are still hard-coded in the game source code, might add more UI for more flexibility)
+
+# Logs
+### Changelogs
+* Add the basic backbone of the whole experiment
+### To do
+* Still progress on  real-time test
+* Add example weights for classifiers (?)
+* Maybe add an example recording for the real-time demo (?)
