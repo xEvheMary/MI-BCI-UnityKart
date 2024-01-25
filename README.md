@@ -47,6 +47,7 @@ The classification result is then converted into an OpenVibe event marker and th
 The options on that mode are the required laps to complete and the toggle for free roam mode. Free roam mode (if set to true) removes the track and objective, letting the kart move freely within the environment.
 
 # Instructions
+Here are the steps for each game mode experiment
 
 ## Calibration Mode
 1. Run the game
