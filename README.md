@@ -44,13 +44,25 @@ OpenVibe has a Python interface/ box that can run Python script in real-time at 
 
 The classification result is then converted into an OpenVibe event marker and then sent to the game via LSL (Optionally, we can also send some float value through another LSL channel to act as variable steering). The game will make use of the received events to control the kart steering angle. The test mode is finished after they complete several laps (laps options are on the screen shown above)
 
-The options on that mode are the required laps to complete and the toggle for free roam mode. Free roam mode (if set to true) removes the track and objective, letting the kart moves freely within the environment.
+The options on that mode are the required laps to complete and the toggle for free roam mode. Free roam mode (if set to true) removes the track and objective, letting the kart move freely within the environment.
 
 # Instructions
 
 ## Calibration Mode
+1. Run the game
+2. Set the training options (number of laps, type of recording)
+3. Start the game, it will go to the wait screen
+4. Run Openvibe, and open the record scenario (either the demo for testing or the real one for recording)
+5. Start the scenario
+6. The game will automatically start after the baseline time (baseline time is set on the scenario's lua stimulator box)
 
 ## Test Mode
+1. Run the game
+2. Set the game options (number of laps, free mode toggle)
+3. Start the game, it will go to the wait screen
+4. Run OpenVibe. open the real-time scenario (either the demo for testing or the real one for recording)
+5. Start the scenario
+6. The game will automatically start after the baseline time
 
 # Other
 The game also has some options that can be changed to suit your objective (not fully utilized for now).
