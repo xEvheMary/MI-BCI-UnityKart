@@ -90,6 +90,7 @@ Settings purpose (might add a tooltip on the menu in the future):
 # Logs
 ### Changelogs
 * Add the basic backbone of the whole experiment
+* Add demo OpenVibe scenario for testing real-time control
 ### To do
 * Still progress on  real-time test
 * Add example weights for classifiers (?)
