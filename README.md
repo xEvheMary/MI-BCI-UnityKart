@@ -53,7 +53,7 @@ Here are the steps for each game mode experiment
 1. Run the game
 2. Set the training options (number of laps, type of recording)
 3. Start the game, it will go to the wait screen
-4. Run Openvibe, and open the record scenario (either the demo for testing or the real one for recording)
+4. Run Openvibe, and open the record scenario (either the demo for testing (LSLRecord-Demo) or the real recording scenario (LSLRecord))
 5. Start the scenario
 6. The game will automatically start after the baseline time (baseline time is set on the scenario's lua stimulator box)
 
@@ -61,7 +61,7 @@ Here are the steps for each game mode experiment
 1. Run the game
 2. Set the game options (number of laps, free mode toggle)
 3. Start the game, it will go to the wait screen
-4. Run OpenVibe. open the real-time scenario (either the demo for testing or the real one for recording)
+4. Run OpenVibe. open the real-time scenario (either the demo for testing (LSLControl-Demo) or the real one for recording)
 5. Start the scenario
 6. The game will automatically start after the baseline time
 
